@@ -1,0 +1,9 @@
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\obj\Debug\Bestnid.csprojResolveAssemblyReference.cache
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\obj\Debug\Bestnid.MainForm.resources
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\obj\Debug\Bestnid.csproj.GenerateResource.Cache
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\bin\Debug\Bestnid.exe
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\bin\Debug\Bestnid.pdb
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\bin\Debug\System.Data.SQLite.dll
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\bin\Debug\System.Data.SQLite.xml
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\obj\Debug\Bestnid.exe
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\obj\Debug\Bestnid.pdb

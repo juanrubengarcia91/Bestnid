@@ -9,3 +9,4 @@ C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\Bestnid\obj\Debug\Bestnid.
 C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\Bestnid\obj\Debug\Bestnid.pdb
 C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\Bestnid\obj\Debug\Bestnid.Registro.resources
 C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\Bestnid\obj\Debug\Bestnid.UsuarioForm.resources
+C:\Users\Jopo\Documents\SharpDevelop Projects\Bestnid\Bestnid\obj\Debug\Bestnid.Perfil.resources

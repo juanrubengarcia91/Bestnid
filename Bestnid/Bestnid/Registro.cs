@@ -99,7 +99,5 @@ namespace Bestnid
 			this.Dispose();
 			principal.Show();
 		}
-
-	
 	}
 }

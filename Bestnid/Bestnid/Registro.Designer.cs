@@ -60,6 +60,11 @@ namespace Bestnid
 		private System.Windows.Forms.TextBox tex_nombre_titular_tarjeta;
 		private System.Windows.Forms.ComboBox Combo_nombre_empresa;
 		private System.Windows.Forms.DateTimePicker date_fecha_nacimiento;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.RadioButton Sexo_femenina;
+		private System.Windows.Forms.RadioButton Sexo_masculino;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -89,6 +94,11 @@ namespace Bestnid
 			this.tex_contra = new System.Windows.Forms.TextBox();
 			this.tex_usuario = new System.Windows.Forms.TextBox();
 			this.Grupo_datos_personales = new System.Windows.Forms.GroupBox();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.Sexo_femenina = new System.Windows.Forms.RadioButton();
+			this.Sexo_masculino = new System.Windows.Forms.RadioButton();
+			this.label1 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.Grupo_fecha_de_nacimiento = new System.Windows.Forms.GroupBox();
 			this.date_fecha_nacimiento = new System.Windows.Forms.DateTimePicker();
 			this.tex_dni = new System.Windows.Forms.TextBox();
@@ -130,6 +140,8 @@ namespace Bestnid
 			this.Combo_nombre_empresa = new System.Windows.Forms.ComboBox();
 			this.Grupo_datos_registro.SuspendLayout();
 			this.Grupo_datos_personales.SuspendLayout();
+			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.Grupo_fecha_de_nacimiento.SuspendLayout();
 			this.Grupo_contacto.SuspendLayout();
 			this.Grupo_direccion.SuspendLayout();
@@ -195,6 +207,9 @@ namespace Bestnid
 			// 
 			// Grupo_datos_personales
 			// 
+			this.Grupo_datos_personales.Controls.Add(this.groupBox1);
+			this.Grupo_datos_personales.Controls.Add(this.label1);
+			this.Grupo_datos_personales.Controls.Add(this.pictureBox1);
 			this.Grupo_datos_personales.Controls.Add(this.Grupo_fecha_de_nacimiento);
 			this.Grupo_datos_personales.Controls.Add(this.tex_dni);
 			this.Grupo_datos_personales.Controls.Add(this.tex_apellido);
@@ -202,18 +217,68 @@ namespace Bestnid
 			this.Grupo_datos_personales.Controls.Add(this.etiq_dni);
 			this.Grupo_datos_personales.Controls.Add(this.etiq_apellido);
 			this.Grupo_datos_personales.Controls.Add(this.etiq_nombre);
-			this.Grupo_datos_personales.Controls.Add(this.Grupo_contacto);
 			this.Grupo_datos_personales.Location = new System.Drawing.Point(12, 115);
 			this.Grupo_datos_personales.Name = "Grupo_datos_personales";
-			this.Grupo_datos_personales.Size = new System.Drawing.Size(590, 224);
+			this.Grupo_datos_personales.Size = new System.Drawing.Size(590, 181);
 			this.Grupo_datos_personales.TabIndex = 1;
 			this.Grupo_datos_personales.TabStop = false;
 			this.Grupo_datos_personales.Text = "Datos personales";
 			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.Sexo_femenina);
+			this.groupBox1.Controls.Add(this.Sexo_masculino);
+			this.groupBox1.Location = new System.Drawing.Point(12, 97);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(155, 68);
+			this.groupBox1.TabIndex = 11;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Sexo";
+			// 
+			// Sexo_femenina
+			// 
+			this.Sexo_femenina.Location = new System.Drawing.Point(6, 19);
+			this.Sexo_femenina.Name = "Sexo_femenina";
+			this.Sexo_femenina.Size = new System.Drawing.Size(104, 24);
+			this.Sexo_femenina.TabIndex = 9;
+			this.Sexo_femenina.TabStop = true;
+			this.Sexo_femenina.Text = "Femenina";
+			this.Sexo_femenina.UseVisualStyleBackColor = true;
+
+			// 
+			// Sexo_masculino
+			// 
+			this.Sexo_masculino.Location = new System.Drawing.Point(6, 39);
+			this.Sexo_masculino.Name = "Sexo_masculino";
+			this.Sexo_masculino.Size = new System.Drawing.Size(104, 24);
+			this.Sexo_masculino.TabIndex = 10;
+			this.Sexo_masculino.TabStop = true;
+			this.Sexo_masculino.Text = "Masculino";
+			this.Sexo_masculino.UseVisualStyleBackColor = true;
+
+			// 
+			// label1
+			// 
+			this.label1.Location = new System.Drawing.Point(297, 155);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(120, 23);
+			this.label1.TabIndex = 8;
+			this.label1.Text = "cambiar mi foto de perfil";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.ImageLocation = "C:\\Users\\Public\\Pictures\\Sample Pictures\\Koala.jpg";
+			this.pictureBox1.Location = new System.Drawing.Point(449, 79);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(134, 96);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 7;
+			this.pictureBox1.TabStop = false;
+			// 
 			// Grupo_fecha_de_nacimiento
 			// 
 			this.Grupo_fecha_de_nacimiento.Controls.Add(this.date_fecha_nacimiento);
-			this.Grupo_fecha_de_nacimiento.Location = new System.Drawing.Point(185, 19);
+			this.Grupo_fecha_de_nacimiento.Location = new System.Drawing.Point(204, 22);
 			this.Grupo_fecha_de_nacimiento.Name = "Grupo_fecha_de_nacimiento";
 			this.Grupo_fecha_de_nacimiento.Size = new System.Drawing.Size(213, 49);
 			this.Grupo_fecha_de_nacimiento.TabIndex = 6;
@@ -284,7 +349,7 @@ namespace Bestnid
 			this.Grupo_contacto.Controls.Add(this.tex_dominio);
 			this.Grupo_contacto.Controls.Add(this.tex_telefono);
 			this.Grupo_contacto.Controls.Add(this.Grupo_direccion);
-			this.Grupo_contacto.Location = new System.Drawing.Point(6, 97);
+			this.Grupo_contacto.Location = new System.Drawing.Point(12, 335);
 			this.Grupo_contacto.Name = "Grupo_contacto";
 			this.Grupo_contacto.Size = new System.Drawing.Size(578, 121);
 			this.Grupo_contacto.TabIndex = 0;
@@ -449,7 +514,7 @@ namespace Bestnid
 			// 
 			// Bot_volver
 			// 
-			this.Bot_volver.Location = new System.Drawing.Point(501, 350);
+			this.Bot_volver.Location = new System.Drawing.Point(491, 540);
 			this.Bot_volver.Name = "Bot_volver";
 			this.Bot_volver.Size = new System.Drawing.Size(55, 39);
 			this.Bot_volver.TabIndex = 4;
@@ -459,7 +524,7 @@ namespace Bestnid
 			// 
 			// Bot_registrar
 			// 
-			this.Bot_registrar.Location = new System.Drawing.Point(422, 350);
+			this.Bot_registrar.Location = new System.Drawing.Point(422, 540);
 			this.Bot_registrar.Name = "Bot_registrar";
 			this.Bot_registrar.Size = new System.Drawing.Size(63, 39);
 			this.Bot_registrar.TabIndex = 3;
@@ -479,7 +544,7 @@ namespace Bestnid
 			this.Grupo_datos_tarjeta.Controls.Add(this.tex_apellido_titular_tarjeta);
 			this.Grupo_datos_tarjeta.Controls.Add(this.tex_nombre_titular_tarjeta);
 			this.Grupo_datos_tarjeta.Controls.Add(this.Combo_nombre_empresa);
-			this.Grupo_datos_tarjeta.Location = new System.Drawing.Point(12, 345);
+			this.Grupo_datos_tarjeta.Location = new System.Drawing.Point(12, 462);
 			this.Grupo_datos_tarjeta.Name = "Grupo_datos_tarjeta";
 			this.Grupo_datos_tarjeta.Size = new System.Drawing.Size(398, 117);
 			this.Grupo_datos_tarjeta.TabIndex = 2;
@@ -585,19 +650,22 @@ namespace Bestnid
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(609, 466);
+			this.ClientSize = new System.Drawing.Size(609, 591);
 			this.Controls.Add(this.Bot_volver);
 			this.Controls.Add(this.Grupo_datos_tarjeta);
 			this.Controls.Add(this.Bot_registrar);
 			this.Controls.Add(this.Grupo_datos_personales);
 			this.Controls.Add(this.Grupo_datos_registro);
+			this.Controls.Add(this.Grupo_contacto);
 			this.Name = "Registro";
-			this.Text = "Registro";
+			this.Text = "Registrarse en Bestnid";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegistroFormClosing);
 			this.Grupo_datos_registro.ResumeLayout(false);
 			this.Grupo_datos_registro.PerformLayout();
 			this.Grupo_datos_personales.ResumeLayout(false);
 			this.Grupo_datos_personales.PerformLayout();
+			this.groupBox1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.Grupo_fecha_de_nacimiento.ResumeLayout(false);
 			this.Grupo_contacto.ResumeLayout(false);
 			this.Grupo_contacto.PerformLayout();

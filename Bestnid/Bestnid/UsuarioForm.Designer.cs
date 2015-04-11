@@ -60,9 +60,9 @@ namespace Bestnid
 			this.button4 = new System.Windows.Forms.Button();
 			this.Bot_ver_usuarios = new System.Windows.Forms.Button();
 			this.Contenedor_usuario = new System.Windows.Forms.SplitContainer();
+			this.tex_eliminar = new System.Windows.Forms.TextBox();
 			this.Contenedor_derecha = new System.Windows.Forms.SplitContainer();
 			this.Panel_opciones = new System.Windows.Forms.Panel();
-			this.tex_eliminar = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.Imagen_perfil)).BeginInit();
 			this.Contenedor_usuario.Panel1.SuspendLayout();
 			this.Contenedor_usuario.Panel2.SuspendLayout();
@@ -105,6 +105,7 @@ namespace Bestnid
 			this.Bot_mi_perfil.TabIndex = 2;
 			this.Bot_mi_perfil.Text = "Mi Perfil";
 			this.Bot_mi_perfil.UseVisualStyleBackColor = true;
+			this.Bot_mi_perfil.Click += new System.EventHandler(this.Bot_mi_perfilClick);
 			// 
 			// Imagen_perfil
 			// 
@@ -195,6 +196,16 @@ namespace Bestnid
 			this.Contenedor_usuario.SplitterDistance = 128;
 			this.Contenedor_usuario.TabIndex = 5;
 			// 
+			// tex_eliminar
+			// 
+			this.tex_eliminar.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.tex_eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tex_eliminar.ForeColor = System.Drawing.Color.Red;
+			this.tex_eliminar.Location = new System.Drawing.Point(0, 315);
+			this.tex_eliminar.Name = "tex_eliminar";
+			this.tex_eliminar.Size = new System.Drawing.Size(128, 20);
+			this.tex_eliminar.TabIndex = 5;
+			// 
 			// Contenedor_derecha
 			// 
 			this.Contenedor_derecha.Dock = System.Windows.Forms.DockStyle.Top;
@@ -229,16 +240,6 @@ namespace Bestnid
 			this.Panel_opciones.Size = new System.Drawing.Size(245, 35);
 			this.Panel_opciones.TabIndex = 5;
 			// 
-			// tex_eliminar
-			// 
-			this.tex_eliminar.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.tex_eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tex_eliminar.ForeColor = System.Drawing.Color.Red;
-			this.tex_eliminar.Location = new System.Drawing.Point(0, 315);
-			this.tex_eliminar.Name = "tex_eliminar";
-			this.tex_eliminar.Size = new System.Drawing.Size(128, 20);
-			this.tex_eliminar.TabIndex = 5;
-			// 
 			// UsuarioForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,7 +250,7 @@ namespace Bestnid
 			this.MinimumSize = new System.Drawing.Size(400, 210);
 			this.Name = "UsuarioForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "UsuarioForm";
+			this.Text = "Usuario Registrado";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UsuarioFormFormClosing);
 			((System.ComponentModel.ISupportInitialize)(this.Imagen_perfil)).EndInit();
 			this.Contenedor_usuario.Panel1.ResumeLayout(false);

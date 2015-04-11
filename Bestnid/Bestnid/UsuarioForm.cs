@@ -19,7 +19,7 @@ namespace Bestnid
 	/// </summary>
 	public partial class UsuarioForm : Form
 	{
-		private static Form principal= MainForm.ActiveForm;
+		public static Form principal= MainForm.ActiveForm;
 		
 		public UsuarioForm()
 		{
@@ -78,6 +78,13 @@ namespace Bestnid
 			String sql_eliminar= "delete from usuarios where usuario='"+usuario+"';";
 			SQLiteCommand eliminar= new SQLiteCommand (sql_eliminar, MainForm.conexion);
 			eliminar.ExecuteNonQuery();
+		}
+		void Bot_mi_perfilClick(object sender, EventArgs e)
+		{
+			Perfil form_perfil= new Perfil();
+			//llenar datos con sql
+			form_perfil.Show();
+			form_perfil.Location= Location;
 		}
 	}
 }
